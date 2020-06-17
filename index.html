@@ -15,42 +15,41 @@
     <section>
         <h1 class="text-center mb-5">Calculadora</h1>
         <div class="container">
-            
-                <input type="text" placeholder="0" class="form-control text-right mb-3" id="mostrarNum">
+            <input type="text" placeholder="0" class="form-control text-right mb-3" id="resultado">
             <!--  -->
             <div class="row">
                 <div class="col-3">
                     <button class="btn btn-dark btn-lg btn-block"> % </button>
-                    <button class="btn btn-primary btn-lg btn-block" onclick="digitos()"> 7 </button>
-                    <button class="btn btn-primary btn-lg btn-block" onclick="digitos()"> 4 </button>
-                    <button class="btn btn-primary btn-lg btn-block" onclick="digitos()"> 1 </button>
-                    <button class="btn btn-dark btn-lg btn-block"> +/- </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="seven" onclick="numeros()"> 7 </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="four" onclick="numeros()"> 4 </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="one" onclick="numeros()"> 1 </button>
+                    <button class="btn btn-dark btn-lg btn-block disabled"> +/- </button>
                 </div>
 
                 <!--  -->
                 <div class="col-3">
-                    <button class="btn btn-dark btn-lg btn-block"> CE </button>
-                    <button class="btn btn-primary btn-lg btn-block"> 8 </button>
-                    <button class="btn btn-primary btn-lg btn-block"> 5 </button>
-                    <button class="btn btn-primary btn-lg btn-block"> 2 </button>
-                    <button class="btn btn-primary btn-lg btn-block"> 0 </button>
+                    <button class="btn btn-dark btn-lg btn-block disabled"> CE </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="eight" onclick="numeros()"> 8 </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="five" onclick="numeros()"> 5 </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="twoo" onclick="numeros()"> 2 </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="zero" onclick="numeros()"> 0 </button>
                 </div>
 
                 <!--  -->
                 <div class="col-3">
                     <button class="btn btn-dark btn-lg btn-block"> C </button>
-                    <button class="btn btn-primary btn-lg btn-block"> 9 </button>
-                    <button class="btn btn-primary btn-lg btn-block"> 6 </button>
-                    <button class="btn btn-primary btn-lg btn-block"> 3 </button>
-                    <button class="btn btn-dark btn-lg btn-block"> , </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="nine" onclick="numeros()"> 9 </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="seven" onclick="numeros()"> 6 </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="three" onclick="numeros()"> 3 </button>
+                    <button class="btn btn-dark btn-lg btn-block disabled"> , </button>
                 </div>
                 <!--  -->
                 <div class="col-3">
-                    <button class="btn btn-dark btn-lg btn-block"> xx </button>
-                    <button class="btn btn-dark btn-lg btn-block"> / </button>
-                    <button class="btn btn-dark btn-lg btn-block"> x </button>
-                    <button class="btn btn-dark btn-lg btn-block"> - </button>
-                    <button class="btn btn-dark btn-lg btn-block"> + </button>
+                    <button class="btn btn-dark btn-lg btn-block disabled"> xx </button>
+                    <button class="btn btn-dark btn-lg btn-block" onclick="operaciones()"> / </button>
+                    <button class="btn btn-dark btn-lg btn-block" onclick="operaciones()"> x </button>
+                    <button class="btn btn-dark btn-lg btn-block" onclick="operaciones()"> - </button>
+                    <button class="btn btn-dark btn-lg btn-block" onclick="operaciones()"> + </button>
                 </div>
                 <div class="col-12">
                     <button class="btn btn-success btn-lg btn-block mt-2"> = </button>
