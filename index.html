@@ -16,12 +16,14 @@
         <h1 class="text-center mb-5">Calculadora</h1>
         <div class="container">
             <!--  -->
-            <input type="text" placeholder="0" class="form-control text-right mb-3" id="demo">
+            <div id="demo" class="border mb-2 col-12 text-right" style="height: 40px;">
+                <!-- <h3 id="demo" class="text-right"></h3> -->
+            </div>
             <div class="row">
                 <div class="col-3">
                     <button class="btn btn-dark btn-lg btn-block"> % </button>
-                    <button class="btn btn-primary btn-lg btn-block" id="n7"> 7 </button>
-                    <button class="btn btn-primary btn-lg btn-block" id="n4"> 4 </button>
+                    <button class="btn btn-primary btn-lg btn-block" onclick="n7()"> 7 </button>
+                    <button class="btn btn-primary btn-lg btn-block" onclick="n4()"> 4 </button>
                     <button class="btn btn-primary btn-lg btn-block" onclick="n1()"> 1 </button>
                     <button class="btn btn-dark btn-lg btn-block disabled"> +/- </button>
                 </div>
@@ -29,24 +31,24 @@
                 <!--  -->
                 <div class="col-3">
                     <button class="btn btn-dark btn-lg btn-block disabled"> CE </button>
-                    <button class="btn btn-primary btn-lg btn-block" id="n8" onclick="n8()"> 8 </button>
-                    <button class="btn btn-primary btn-lg btn-block" id="n5" onclick="n5()"> 5 </button>
-                    <button class="btn btn-primary btn-lg btn-block" id="n2" onclick="n2()"> 2 </button>
-                    <button class="btn btn-primary btn-lg btn-block" id="n0" onclick="n0()"> 0 </button>
+                    <button class="btn btn-primary btn-lg btn-block" onclick="n8()"> 8 </button>
+                    <button class="btn btn-primary btn-lg btn-block" onclick="n5()"> 5 </button>
+                    <button class="btn btn-primary btn-lg btn-block" onclick="n2()"> 2 </button>
+                    <button class="btn btn-primary btn-lg btn-block" onclick="n0()"> 0 </button>
                 </div>
 
                 <!--  -->
                 <div class="col-3">
                     <button class="btn btn-dark btn-lg btn-block"> C </button>
-                    <button class="btn btn-primary btn-lg btn-block" id="n9" onclick="n9()"> 9 </button>
-                    <button class="btn btn-primary btn-lg btn-block" id="n6" onclick="n6()"> 6 </button>
-                    <button class="btn btn-primary btn-lg btn-block" id="n3" onclick="n3()"> 3 </button>
+                    <button class="btn btn-primary btn-lg btn-block" onclick="n9()"> 9 </button>
+                    <button class="btn btn-primary btn-lg btn-block" onclick="n6()"> 6 </button>
+                    <button class="btn btn-primary btn-lg btn-block" onclick="n3()"> 3 </button>
                     <button class="btn btn-dark btn-lg btn-block disabled"> , </button>
                 </div>
                 <!--  -->
                 <div class="col-3">
                     <button class="btn btn-dark btn-lg btn-block disabled"> xx </button>
-                    <button class="btn btn-dark btn-lg btn-block"> / </button>
+                    <button class="btn btn-dark btn-lg btn-block"> ÷ </button>
                     <button class="btn btn-dark btn-lg btn-block"> x </button>
                     <button class="btn btn-dark btn-lg btn-block"> - </button>
                     <button class="btn btn-dark btn-lg btn-block"> + </button>
@@ -55,17 +57,9 @@
                     <button class="btn btn-success btn-lg btn-block mt-2"> = </button>
                 </div>
             </div>
-            <button onclick="myFunction()">Click me</button>
 
-            <p id="demo"></p>
 
-            <p>A function is triggered when the button is clicked. The function outputs some text in a p element with
-                id="demo".</p>
-            <script>
-                function myFunction() {
-                    document.getElementById("demo").innerHTML = "Hello World";
-                }
-            </script>
+        </div>
     </section>
     <!-- --//-- -->
     <script src="js/jquery-3.5.1.min.js"></script>
