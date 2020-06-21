@@ -59,3 +59,28 @@ function n0() {
     let actual = document.getElementById("demo").innerHTML;
     document.getElementById("demo").innerHTML = actual + numeroX;
 }
+
+function opD() {
+    console.log("hola apretaste la division");
+    let operacion = "/";
+    let actual = document.getElementById("demo").innerHTML;
+    document.getElementById("demo").innerHTML = actual + " " + operacion + " ";
+}
+function opM() {
+    console.log("hola apretaste la mulsiplicacion");
+    let operacion = "*";
+    let actual = document.getElementById("demo").innerHTML;
+    document.getElementById("demo").innerHTML = actual + " " + operacion + " ";
+}
+function opR() {
+    console.log("hola apretaste la resta");
+    let operacion = "-";
+    let actual = document.getElementById("demo").innerHTML;
+    document.getElementById("demo").innerHTML = actual + " " + operacion + " ";
+}
+function opS() {
+    console.log("hola apretaste la suma");
+    let operacion = "+";
+    let actual = document.getElementById("demo").innerHTML;
+    document.getElementById("demo").innerHTML = actual + " " + operacion + " ";
+}
