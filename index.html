@@ -16,45 +16,45 @@
         <h1 class="text-center mb-5">Calculadora</h1>
         <div class="container">
             <!--  -->
-            <div id="demo" class="border mb-2 col-12 text-right" style="height: 40px;">
+            <div id="indicador" class="border mb-2 col-12 text-right" style="height: 40px;">
                 <!-- <h3 id="demo" class="text-right"></h3> -->
             </div>
             <div class="row">
                 <div class="col-3">
                     <button class="btn btn-dark btn-lg btn-block"> % </button>
-                    <button class="btn btn-primary btn-lg btn-block" onclick="n7()"> 7 </button>
-                    <button class="btn btn-primary btn-lg btn-block" onclick="n4()"> 4 </button>
-                    <button class="btn btn-primary btn-lg btn-block" onclick="n1()"> 1 </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="n7"> 7 </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="n4"> 4 </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="n1"> 1 </button>
                     <button class="btn btn-dark btn-lg btn-block disabled"> +/- </button>
                 </div>
 
                 <!--  -->
                 <div class="col-3">
                     <button class="btn btn-dark btn-lg btn-block disabled"> CE </button>
-                    <button class="btn btn-primary btn-lg btn-block" onclick="n8()"> 8 </button>
-                    <button class="btn btn-primary btn-lg btn-block" onclick="n5()"> 5 </button>
-                    <button class="btn btn-primary btn-lg btn-block" onclick="n2()"> 2 </button>
-                    <button class="btn btn-primary btn-lg btn-block" onclick="n0()"> 0 </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="n8"> 8 </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="n5"> 5 </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="n2"> 2 </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="n0"> 0 </button>
                 </div>
 
                 <!--  -->
                 <div class="col-3">
-                    <button class="btn btn-dark btn-lg btn-block"> C </button>
-                    <button class="btn btn-primary btn-lg btn-block" onclick="n9()"> 9 </button>
-                    <button class="btn btn-primary btn-lg btn-block" onclick="n6()"> 6 </button>
-                    <button class="btn btn-primary btn-lg btn-block" onclick="n3()"> 3 </button>
+                    <button class="btn btn-dark btn-lg btn-block disabled"> C </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="n9"> 9 </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="n6"> 6 </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="n3"> 3 </button>
                     <button class="btn btn-dark btn-lg btn-block disabled"> , </button>
                 </div>
                 <!--  -->
                 <div class="col-3">
                     <button class="btn btn-dark btn-lg btn-block disabled"> xx </button>
-                    <button class="btn btn-dark btn-lg btn-block" onclick="opD()"> ÷ </button>
-                    <button class="btn btn-dark btn-lg btn-block" onclick="opM()"> x </button>
-                    <button class="btn btn-dark btn-lg btn-block" onclick="opR()"> - </button>
-                    <button class="btn btn-dark btn-lg btn-block" onclick="opS()"> + </button>
+                    <button class="btn btn-dark btn-lg btn-block" id="d"> ÷ </button>
+                    <button class="btn btn-dark btn-lg btn-block" id="m"> x </button>
+                    <button class="btn btn-dark btn-lg btn-block" id="r"> - </button>
+                    <button class="btn btn-dark btn-lg btn-block" id="s"> + </button>
                 </div>
                 <div class="col-12">
-                    <button class="btn btn-success btn-lg btn-block mt-2" onclick="sr()"> = </button>
+                    <button class="btn btn-success btn-lg btn-block mt-2" id="show"> = </button>
                 </div>
             </div>
 
